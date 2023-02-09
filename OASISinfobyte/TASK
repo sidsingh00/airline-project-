@@ -1,0 +1,76 @@
+while (c == true) {
+
+    System.out.println(" EXAMINATION ID :" + " " + d);
+    System.out.print("ENTER YOUR PASSWORD :");
+    pass = sr.nextLine();
+
+    if (exam == true) {
+        System.out.println(" MODIFIED PASSWORD:" + " " + rand2);
+        break;
+    }
+
+}
+d = d.concat(gmail2);
+int rand2 = (int) (Math.random() * 3);
+
+
+
+
+
+
+
+public class Timersubmit {
+
+    
+    void TS() {
+        Timer time = new Timer();
+        TimerTask task = new TimerTask() {
+
+            @Override
+            public void run() {
+                int count = 20;
+                // TODO Auto-generated method stub
+                while(count > 0){
+                    if (count > 0) {
+                        System.out.println("HERE YOUR EXAMINATION STARTED");
+                        System.out.println("YOU HAVE TO SOLVE TOTAL 2 QUESTION ");
+                        System.out.println("YOU HAVE TOTAL 10 SEC FOR EACH QUESTION GET READY");
+                        
+                    }
+    
+                }
+
+               
+
+            }
+
+        };
+
+        time.schedule(task, 20000);
+
+    }
+
+    public static void main(String[] args) {
+        loginpage lp = new loginpage();
+        lp.login();
+        Timersubmit tm = new Timersubmit();
+        tm.TS();
+    }
+
+}
+
+
+
+Timer tim = new Timer();
+        Timertask task3 = new Timertask(){
+            @Override
+            public void run() {
+           
+                 // TODO Auto-generated method stub
+
+
+                 System.out.println("EXAM OVER");
+                 System.out.println("Exam successfully submitted ");                 
+            }
+
+        }
